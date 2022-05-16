@@ -666,7 +666,8 @@ public class MainSceneController {
             e.printStackTrace();
         }
     }
-
+    
+    //НЕ ТРОГАТЬ НИКОГДА
     protected void refreshDrawnObjects() {
         Timeline refresher = new Timeline(
                 new KeyFrame(Duration.seconds(1),
@@ -677,7 +678,7 @@ public class MainSceneController {
                                 painter.normalizeRadius(ans.getCollection());
 
                                 if (collectionCopy.size() != ans.getCollection().size()) loadVisualScene();
-
+                                
                                 collectionCopy = ans.getCollection();
                                 painter.normalizeRadius(collectionCopy);
 
